@@ -1,6 +1,9 @@
-<div>
+<div *ngIf="loading">
+  <span>loading......</span>
+</div>
+<div *ngIf="!loading" style="display: flex; flex-direction: column">
   <h1>This is new feature</h1>
   <span>feature 1</span>
   <span>new feature</span>
-  <span>new feature2</span>
+  <span *ngIf="featureFlag">new feature1 which is not ready</span>
 </div>
