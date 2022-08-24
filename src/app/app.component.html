@@ -6,5 +6,9 @@
   <span>feature 1</span>
   <span>new feature</span>
   <span>new feature3</span>
-  <span *ngIf="featureFlag">new feature1 which is not ready</span>
+  <div *ngIf="featureFlag" style="display: flex; flex-direction: row; justify-content: space-around; width: 500px;margin-top: 100px">
+    <span>new feature1 which is not ready</span>
+    <span>the rest of feature 1</span>
+  </div>
+
 </div>
